@@ -1,0 +1,9 @@
+todo.txt
+
+src/simulation/__pycache__
+src/toos/__pycache__
+src/utils/__pycache__
+
+venv/
+
+abinit-9.10.3
