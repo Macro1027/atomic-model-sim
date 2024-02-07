@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Terms of use}{1}{section.2}%
+\contentsline {section}{\numberline {3}Installation}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Installing the \texttt {QE-modes}\ package}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Editing the \texttt {user-init-file} file}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Usage}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Available modes defined by \texttt {qe-modes}}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Commands}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Auto-completion mechanism}{6}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Selection of card's flag value}{7}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Controlling indentation}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Note to \texttt {Vi} users}{7}{subsection.4.5}%

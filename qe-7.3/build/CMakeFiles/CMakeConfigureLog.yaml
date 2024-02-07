@@ -1,0 +1,950 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      The system is: Darwin - 23.1.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineFortranCompiler.cmake:186 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+      Compiler: /opt/homebrew/bin/mpif90 
+      Build flags: 
+      Id flags: -v 
+      
+      The output was:
+      0
+      Driving: /opt/homebrew/bin/gfortran -v CMakeFortranCompilerId.F -I/opt/homebrew/Cellar/open-mpi/5.0.1/include -Wl,-flat_namespace -I/opt/homebrew/Cellar/open-mpi/5.0.1/lib -L/opt/homebrew/Cellar/open-mpi/5.0.1/lib -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -mmacosx-version-min=14.0.0 -asm_macosx_version_min=14.0 -nodefaultexport -l gfortran
+      Using built-in specs.
+      COLLECT_GCC=/opt/homebrew/bin/gfortran
+      COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/lto-wrapper
+      Target: aarch64-apple-darwin23
+      Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-13 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 13.2.0' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin23 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk
+      Thread model: posix
+      Supported LTO compression algorithms: zlib zstd
+      gcc version 13.2.0 (Homebrew GCC 13.2.0) 
+      COLLECT_GCC_OPTIONS='-v' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.0.0' '-asm_macosx_version_min=14.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+       /opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc2eqp72.f90 -quiet -v -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib -iprefix /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/ -D__DYNAMIC__ CMakeFortranCompilerId.F -fPIC -quiet -dumpdir a- -dumpbase CMakeFortranCompilerId.F -dumpbase-ext .F -mmacosx-version-min=14.0.0 -mlittle-endian -mabi=lp64 -version -fintrinsic-modules-path /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude -o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc37bATU.s
+      GNU Fortran (Homebrew GCC 13.2.0) version 13.2.0 (aarch64-apple-darwin23)
+      	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+      
+      GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+      ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../../../../aarch64-apple-darwin23/include"
+      ignoring duplicate directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include"
+      ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/local/include"
+      ignoring duplicate directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed"
+      ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../../../../aarch64-apple-darwin23/include"
+      #include "..." search starts here:
+      #include <...> search starts here:
+       /opt/homebrew/Cellar/open-mpi/5.0.1/include
+       /opt/homebrew/Cellar/open-mpi/5.0.1/lib
+       /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude
+       /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include
+       /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed
+       /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include
+      End of search list.
+      COLLECT_GCC_OPTIONS='-v' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+       as -arch arm64 -v -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib -mmacosx-version-min=14.0 -o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//ccRzJXiF.o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc37bATU.s
+      Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+      Target: arm64-apple-darwin23.1.0
+      Thread model: posix
+      InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+       "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx14.0.0 -filetype obj -main-file-name cc37bATU.s -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib "-fdebug-compilation-dir=/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/3.28.2/CompilerIdFortran" -dwarf-debug-producer "Apple clang version 15.0.0 (clang-1500.1.0.2.5)" -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//ccRzJXiF.o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc37bATU.s
+      Reading specs from /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../libgfortran.spec
+      rename spec lib to liborig
+      COLLECT_GCC_OPTIONS='-v' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+      COMPILER_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/
+      LIBRARY_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../
+      COLLECT_GCC_OPTIONS='-v' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a.'
+       /opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/collect2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/ -dynamic -arch arm64 -platform_version macos 14.0.0 0.0 -o a.out -L/opt/homebrew/Cellar/open-mpi/5.0.1/lib -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13 -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../.. /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//ccRzJXiF.o -flat_namespace -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lgfortran -lemutls_w -lgcc -lquadmath -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13 -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current
+      
+      
+      Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+      
+      The Fortran compiler identification is GNU, found in:
+        /Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/3.28.2/CompilerIdFortran/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/homebrew/bin/mpicc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/3.28.2/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    checks:
+      - "Detecting Fortran compiler ABI info"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-md0wJP"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-md0wJP"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_Fortran_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-md0wJP'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_93a74/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_93a74.dir/build.make CMakeFiles/cmTC_93a74.dir/build
+        Building Fortran object CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o
+        /opt/homebrew/bin/mpif90   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1   -v -Wl,-v -c /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/gfortran
+        Target: aarch64-apple-darwin23
+        Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-13 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 13.2.0' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin23 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Homebrew GCC 13.2.0) 
+        COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1' '-asm_macosx_version_min=14.1' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93a74.dir/'
+         /opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/f951 /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeFortranCompilerABI.F90 -cpp=/var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//ccjdf0Ct.f90 -quiet -v -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib -iprefix /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/ -D__DYNAMIC__ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeFortranCompilerABI.F90 -fPIC -quiet -dumpdir CMakeFiles/cmTC_93a74.dir/ -dumpbase CMakeFortranCompilerABI.F90.F90 -dumpbase-ext .F90 -mmacosx-version-min=14.1 -mlittle-endian -mabi=lp64 -version -fintrinsic-modules-path /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude -o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc14xTVt.s
+        GNU Fortran (Homebrew GCC 13.2.0) version 13.2.0 (aarch64-apple-darwin23)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../../../../aarch64-apple-darwin23/include"
+        ignoring duplicate directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"
+        ignoring duplicate directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed"
+        ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../../../../aarch64-apple-darwin23/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/Cellar/open-mpi/5.0.1/include
+         /opt/homebrew/Cellar/open-mpi/5.0.1/lib
+         /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude
+         /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include
+         /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include
+        End of search list.
+        COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93a74.dir/'
+         as -arch arm64 -v -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib -mmacosx-version-min=14.1 -o CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc14xTVt.s
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.1.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx14.1.0 -filetype obj -main-file-name cc14xTVt.s -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib "-fdebug-compilation-dir=/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-md0wJP" -dwarf-debug-producer "Apple clang version 15.0.0 (clang-1500.1.0.2.5)" -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc14xTVt.s
+        COMPILER_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/
+        LIBRARY_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../
+        COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.'
+        Linking Fortran executable cmTC_93a74
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93a74.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -v -Wl,-v  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o -o cmTC_93a74 
+        Driving: /opt/homebrew/bin/gfortran -v -Wl,-v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o -o cmTC_93a74 -I/opt/homebrew/Cellar/open-mpi/5.0.1/include -Wl,-flat_namespace -I/opt/homebrew/Cellar/open-mpi/5.0.1/lib -L/opt/homebrew/Cellar/open-mpi/5.0.1/lib -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -mmacosx-version-min=14.1 -asm_macosx_version_min=14.1 -nodefaultexport -l gfortran
+        Using built-in specs.
+        COLLECT_GCC=/opt/homebrew/bin/gfortran
+        COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/lto-wrapper
+        Target: aarch64-apple-darwin23
+        Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-13 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 13.2.0' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin23 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Homebrew GCC 13.2.0) 
+        Reading specs from /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../libgfortran.spec
+        rename spec lib to liborig
+        COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-o' 'cmTC_93a74' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1' '-asm_macosx_version_min=14.1' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_93a74-'
+        COMPILER_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/
+        LIBRARY_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../
+        COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-o' 'cmTC_93a74' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1' '-asm_macosx_version_min=14.1' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_93a74.'
+         /opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/collect2 -dynamic -arch arm64 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -platform_version macos 14.1 0.0 -o cmTC_93a74 -L/opt/homebrew/Cellar/open-mpi/5.0.1/lib -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13 -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../.. -v CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o -flat_namespace -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lgfortran -lemutls_w -lgcc -lquadmath -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13 -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current
+        collect2 version 13.2.0
+        /usr/bin/ld -dynamic -arch arm64 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -platform_version macos 14.1 0.0 -o cmTC_93a74 -L/opt/homebrew/Cellar/open-mpi/5.0.1/lib -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13 -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../.. -v CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o -flat_namespace -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lgfortran -lemutls_w -lgcc -lquadmath -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13 -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current
+        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+        BUILD 13:21:42 Nov 10 2023
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+        Library search paths:
+        	/opt/homebrew/Cellar/open-mpi/5.0.1/lib
+        	/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13
+        	/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc
+        	/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../..
+        Framework search paths:
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed Fortran implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/homebrew/Cellar/open-mpi/5.0.1/include]
+          add: [/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+          add: [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude]
+          add: [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include]
+          add: [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+        end of search list found
+        collapse include dir [/opt/homebrew/Cellar/open-mpi/5.0.1/include] ==> [/opt/homebrew/Cellar/open-mpi/5.0.1/include]
+        collapse include dir [/opt/homebrew/Cellar/open-mpi/5.0.1/lib] ==> [/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+        collapse include dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude] ==> [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude]
+        collapse include dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include] ==> [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13/include]
+        collapse include dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed] ==> [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+        implicit include dirs: [/opt/homebrew/Cellar/open-mpi/5.0.1/include;/opt/homebrew/Cellar/open-mpi/5.0.1/lib;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13/include;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed;/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeTestFortranCompiler.cmake:20 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed Fortran implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-md0wJP']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_93a74/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_93a74.dir/build.make CMakeFiles/cmTC_93a74.dir/build]
+        ignore line: [Building Fortran object CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o]
+        ignore line: [/opt/homebrew/bin/mpif90   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1   -v -Wl -v -c /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/gfortran]
+        ignore line: [Target: aarch64-apple-darwin23]
+        ignore line: [Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-13 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 13.2.0' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin23 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Homebrew GCC 13.2.0) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1' '-asm_macosx_version_min=14.1' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93a74.dir/']
+        ignore line: [ /opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/f951 /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeFortranCompilerABI.F90 -cpp=/var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//ccjdf0Ct.f90 -quiet -v -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib -iprefix /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/ -D__DYNAMIC__ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeFortranCompilerABI.F90 -fPIC -quiet -dumpdir CMakeFiles/cmTC_93a74.dir/ -dumpbase CMakeFortranCompilerABI.F90.F90 -dumpbase-ext .F90 -mmacosx-version-min=14.1 -mlittle-endian -mabi=lp64 -version -fintrinsic-modules-path /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude -o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc14xTVt.s]
+        ignore line: [GNU Fortran (Homebrew GCC 13.2.0) version 13.2.0 (aarch64-apple-darwin23)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../../../../aarch64-apple-darwin23/include"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/../../../../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../../../../aarch64-apple-darwin23/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/Cellar/open-mpi/5.0.1/include]
+        ignore line: [ /opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+        ignore line: [ /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/finclude]
+        ignore line: [ /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include]
+        ignore line: [ /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/include-fixed]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93a74.dir/']
+        ignore line: [ as -arch arm64 -v -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib -mmacosx-version-min=14.1 -o CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc14xTVt.s]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.1.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx14.1.0 -filetype obj -main-file-name cc14xTVt.s -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib "-fdebug-compilation-dir=/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-md0wJP" -dwarf-debug-producer "Apple clang version 15.0.0 (clang-1500.1.0.2.5)" -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -I /opt/homebrew/Cellar/open-mpi/5.0.1/lib -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o /var/folders/h8/7g6ps5r13vn_sdc7z1081w480000gr/T//cc14xTVt.s]
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-v' '-c' '-o' 'CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.']
+        ignore line: [Linking Fortran executable cmTC_93a74]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93a74.dir/link.txt --verbose=1]
+        ignore line: [/opt/homebrew/bin/mpif90  -v -Wl -v  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o -o cmTC_93a74 ]
+        ignore line: [Driving: /opt/homebrew/bin/gfortran -v -Wl -v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o -o cmTC_93a74 -I/opt/homebrew/Cellar/open-mpi/5.0.1/include -Wl -flat_namespace -I/opt/homebrew/Cellar/open-mpi/5.0.1/lib -L/opt/homebrew/Cellar/open-mpi/5.0.1/lib -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -mmacosx-version-min=14.1 -asm_macosx_version_min=14.1 -nodefaultexport -l gfortran]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/homebrew/bin/gfortran]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/lto-wrapper]
+        ignore line: [Target: aarch64-apple-darwin23]
+        ignore line: [Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/current --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-13 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 13.2.0' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --with-system-zlib --build=aarch64-apple-darwin23 --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Homebrew GCC 13.2.0) ]
+        ignore line: [Reading specs from /opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../libgfortran.spec]
+        ignore line: [rename spec lib to liborig]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-o' 'cmTC_93a74' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1' '-asm_macosx_version_min=14.1' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_93a74-']
+        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/:/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk' '-o' 'cmTC_93a74' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/include' '-I' '/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib' '-mmacosx-version-min=14.1' '-asm_macosx_version_min=14.1' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_93a74.']
+        link line: [ /opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/collect2 -dynamic -arch arm64 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -platform_version macos 14.1 0.0 -o cmTC_93a74 -L/opt/homebrew/Cellar/open-mpi/5.0.1/lib -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13 -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../.. -v CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o -flat_namespace -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi -lgfortran -lemutls_w -lgcc -lquadmath -lSystem -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13 -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current]
+          arg [/opt/homebrew/Cellar/gcc/13.2.0/bin/../libexec/gcc/aarch64-apple-darwin23/13/collect2] ==> ignore
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.1] ==> ignore
+          arg [0.0] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_93a74] ==> ignore
+          arg [-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib] ==> dir [/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+          arg [-L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13] ==> dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13]
+          arg [-L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc] ==> dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc]
+          arg [-L/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../..] ==> dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_93a74.dir/CMakeFortranCompilerABI.F90.o] ==> ignore
+          arg [-flat_namespace] ==> ignore
+          arg [-lmpi_usempif08] ==> lib [mpi_usempif08]
+          arg [-lmpi_usempi_ignore_tkr] ==> lib [mpi_usempi_ignore_tkr]
+          arg [-lmpi_mpifh] ==> lib [mpi_mpifh]
+          arg [-lmpi] ==> lib [mpi]
+          arg [-lgfortran] ==> lib [gfortran]
+          arg [-lemutls_w] ==> lib [emutls_w]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lquadmath] ==> lib [quadmath]
+          arg [-lSystem] ==> lib [System]
+          arg [-no_compact_unwind] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [@loader_path] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current] ==> ignore
+        Library search paths: [;/opt/homebrew/Cellar/open-mpi/5.0.1/lib;/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13;/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc;/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../..]
+        remove lib [System]
+        collapse library dir [/opt/homebrew/Cellar/open-mpi/5.0.1/lib] ==> [/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+        collapse library dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13] ==> [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13]
+        collapse library dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc] ==> [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc]
+        collapse library dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../..] ==> [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current]
+        collapse library dir [/opt/homebrew/Cellar/open-mpi/5.0.1/lib] ==> [/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+        collapse library dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13] ==> [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13]
+        collapse library dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc] ==> [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc]
+        collapse library dir [/opt/homebrew/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/aarch64-apple-darwin23/13/../../..] ==> [/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current]
+        implicit libs: [mpi_usempif08;mpi_usempi_ignore_tkr;mpi_mpifh;mpi;gfortran;emutls_w;gcc;quadmath]
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/Cellar/open-mpi/5.0.1/lib;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc/aarch64-apple-darwin23/13;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current/gcc;/opt/homebrew/Cellar/gcc/13.2.0/lib/gcc/current]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-lB1Ijw"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-lB1Ijw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-lB1Ijw'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b4f84/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b4f84.dir/build.make CMakeFiles/cmTC_b4f84.dir/build
+        Building C object CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o
+        /opt/homebrew/bin/mpicc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1   -v -Wl,-v -MD -MT CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.1.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v "-fcoverage-compilation-dir=/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-lB1Ijw" -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant "-fdebug-compilation-dir=/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-lB1Ijw" -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.1.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/Cellar/open-mpi/5.0.1/include
+         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_b4f84
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4f84.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpicc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -o cmTC_b4f84 
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.1.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.1.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o cmTC_b4f84 -L/opt/homebrew/Cellar/open-mpi/5.0.1/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -lmpi -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+        BUILD 13:21:42 Nov 10 2023
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+        Library search paths:
+        	/opt/homebrew/Cellar/open-mpi/5.0.1/lib
+        Framework search paths:
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/homebrew/Cellar/open-mpi/5.0.1/include]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/opt/homebrew/Cellar/open-mpi/5.0.1/include] ==> [/opt/homebrew/Cellar/open-mpi/5.0.1/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/opt/homebrew/Cellar/open-mpi/5.0.1/include;/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:15 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-lB1Ijw']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b4f84/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b4f84.dir/build.make CMakeFiles/cmTC_b4f84.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/opt/homebrew/bin/mpicc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1   -v -Wl -v -MD -MT CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.1.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v "-fcoverage-compilation-dir=/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-lB1Ijw" -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -I /opt/homebrew/Cellar/open-mpi/5.0.1/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant "-fdebug-compilation-dir=/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-lB1Ijw" -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.1.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/Cellar/open-mpi/5.0.1/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_b4f84]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4f84.dir/link.txt --verbose=1]
+        ignore line: [/opt/homebrew/bin/mpicc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -o cmTC_b4f84 ]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.1.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.1.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o cmTC_b4f84 -L/opt/homebrew/Cellar/open-mpi/5.0.1/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o -lmpi -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.1.0] ==> ignore
+          arg [14.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b4f84] ==> ignore
+          arg [-L/opt/homebrew/Cellar/open-mpi/5.0.1/lib] ==> dir [/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_b4f84.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lmpi] ==> lib [mpi]
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        Library search paths: [;/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/opt/homebrew/Cellar/open-mpi/5.0.1/lib] ==> [/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+        collapse library dir [/opt/homebrew/Cellar/open-mpi/5.0.1/lib] ==> [/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+        implicit libs: [mpi]
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/Cellar/open-mpi/5.0.1/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:207 (check_function_exists)"
+    checks:
+      - "Looking for mallinfo"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-Pi5WVs"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-Pi5WVs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_MALLINFO"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-Pi5WVs'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8347d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8347d.dir/build.make CMakeFiles/cmTC_8347d.dir/build
+        Building C object CMakeFiles/cmTC_8347d.dir/CheckFunctionExists.c.o
+        /opt/homebrew/bin/mpicc   -DCHECK_FUNCTION_EXISTS=mallinfo -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -MD -MT CMakeFiles/cmTC_8347d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8347d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8347d.dir/CheckFunctionExists.c.o -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-Pi5WVs/CheckFunctionExists.c"
+        Linking C executable cmTC_8347d
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8347d.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpicc  -DCHECK_FUNCTION_EXISTS=mallinfo -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_8347d.dir/CheckFunctionExists.c.o -o cmTC_8347d 
+        ld: Undefined symbols:
+          _mallinfo, referenced from:
+              _main in CheckFunctionExists.c.o
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [cmTC_8347d] Error 1
+        make: *** [cmTC_8347d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CheckFortranCompilerFlag.cmake:53 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:299 (check_fortran_compiler_flag)"
+    checks:
+      - "Performing Test Fortran_ISYSTEM_SUPPORTED"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-BMfH76"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-BMfH76"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: ""
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "Fortran_ISYSTEM_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-BMfH76'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_90ed8/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_90ed8.dir/build.make CMakeFiles/cmTC_90ed8.dir/build
+        Building Fortran object CMakeFiles/cmTC_90ed8.dir/src.F90.o
+        /opt/homebrew/bin/mpif90 -DFortran_ISYSTEM_SUPPORTED  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1   -isystem . -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-BMfH76/src.F90" -o CMakeFiles/cmTC_90ed8.dir/src.F90.o
+        Linking Fortran executable cmTC_90ed8
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90ed8.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_90ed8.dir/src.F90.o -o cmTC_90ed8 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1707 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:388 (find_package)"
+    description: "The MPI test mpiver for Fortran in mode F08_MODULE"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-qsGIZY"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-qsGIZY"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: " -fallow-argument-mismatch"
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_Fortran_mpiver_F08_MODULE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-qsGIZY'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_44224/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_44224.dir/build.make CMakeFiles/cmTC_44224.dir/build
+        Building Fortran object CMakeFiles/cmTC_44224.dir/mpiver.f90.o
+        /opt/homebrew/bin/mpif90   -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-qsGIZY/mpiver.f90" -o CMakeFiles/cmTC_44224.dir/mpiver.f90.o
+        Linking Fortran executable cmTC_44224
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44224.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_44224.dir/mpiver.f90.o -o cmTC_44224 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CheckFortranFunctionExists.cmake:69 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindBLAS.cmake:370 (check_fortran_function_exists)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindBLAS.cmake:416 (check_blas_libraries)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "CMakeLists.txt:446 (find_package)"
+    checks:
+      - "Looking for Fortran sgemm"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-QdFXQP"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-QdFXQP"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: " -fallow-argument-mismatch"
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-QdFXQP'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4ce6d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4ce6d.dir/build.make CMakeFiles/cmTC_4ce6d.dir/build
+        Building Fortran object CMakeFiles/cmTC_4ce6d.dir/testFortranCompiler.f.o
+        /opt/homebrew/bin/mpif90   -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-QdFXQP/testFortranCompiler.f" -o CMakeFiles/cmTC_4ce6d.dir/testFortranCompiler.f.o
+        Linking Fortran executable cmTC_4ce6d
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ce6d.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_4ce6d.dir/testFortranCompiler.f.o -o cmTC_4ce6d 
+        ld: Undefined symbols:
+          _sgemm_, referenced from:
+              _MAIN__ in testFortranCompiler.f.o
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [cmTC_4ce6d] Error 1
+        make: *** [cmTC_4ce6d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindBLAS.cmake:468 (find_package)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "CMakeLists.txt:446 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-vzCIEk"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-vzCIEk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-vzCIEk'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_93f7e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_93f7e.dir/build.make CMakeFiles/cmTC_93f7e.dir/build
+        Building C object CMakeFiles/cmTC_93f7e.dir/src.c.o
+        /opt/homebrew/bin/mpicc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -MD -MT CMakeFiles/cmTC_93f7e.dir/src.c.o -MF CMakeFiles/cmTC_93f7e.dir/src.c.o.d -o CMakeFiles/cmTC_93f7e.dir/src.c.o -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-vzCIEk/src.c"
+        Linking C executable cmTC_93f7e
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93f7e.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpicc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_93f7e.dir/src.c.o -o cmTC_93f7e 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CheckFortranFunctionExists.cmake:69 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindBLAS.cmake:370 (check_fortran_function_exists)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindBLAS.cmake:1207 (check_blas_libraries)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "CMakeLists.txt:446 (find_package)"
+    checks:
+      - "Looking for Fortran dgemm"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-WHxc6H"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-WHxc6H"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: " -fallow-argument-mismatch"
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "BLAS_Accelerate_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-WHxc6H'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c4dd5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c4dd5.dir/build.make CMakeFiles/cmTC_c4dd5.dir/build
+        Building Fortran object CMakeFiles/cmTC_c4dd5.dir/testFortranCompiler.f.o
+        /opt/homebrew/bin/mpif90  -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-WHxc6H/testFortranCompiler.f" -o CMakeFiles/cmTC_c4dd5.dir/testFortranCompiler.f.o
+        Linking Fortran executable cmTC_c4dd5
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4dd5.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_c4dd5.dir/testFortranCompiler.f.o -o cmTC_c4dd5  -framework Accelerate 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CheckFortranFunctionExists.cmake:69 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindLAPACK.cmake:218 (check_fortran_function_exists)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindLAPACK.cmake:397 (check_lapack_libraries)"
+      - "CMakeLists.txt:446 (find_package)"
+    checks:
+      - "Looking for Fortran cheev"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-75zgDp"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-75zgDp"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: " -fallow-argument-mismatch"
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "LAPACK_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-75zgDp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_daab9/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_daab9.dir/build.make CMakeFiles/cmTC_daab9.dir/build
+        Building Fortran object CMakeFiles/cmTC_daab9.dir/testFortranCompiler.f.o
+        /opt/homebrew/bin/mpif90  -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-75zgDp/testFortranCompiler.f" -o CMakeFiles/cmTC_daab9.dir/testFortranCompiler.f.o
+        Linking Fortran executable cmTC_daab9
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daab9.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_daab9.dir/testFortranCompiler.f.o -o cmTC_daab9  -framework Accelerate -lm -ldl 
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/CheckFortranFunctionExists.cmake:69 (try_compile)"
+      - "CMakeLists.txt:469 (check_fortran_function_exists)"
+    checks:
+      - "Looking for Fortran zhpev"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-QoL9eR"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-QoL9eR"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: " -fallow-argument-mismatch"
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "ZHPEV_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-QoL9eR'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6be63/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6be63.dir/build.make CMakeFiles/cmTC_6be63.dir/build
+        Building Fortran object CMakeFiles/cmTC_6be63.dir/testFortranCompiler.f.o
+        /opt/homebrew/bin/mpif90  -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-QoL9eR/testFortranCompiler.f" -o CMakeFiles/cmTC_6be63.dir/testFortranCompiler.f.o
+        Linking Fortran executable cmTC_6be63
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6be63.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_6be63.dir/testFortranCompiler.f.o -o cmTC_6be63  -framework Accelerate -framework Accelerate -lm -ldl 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1707 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:388 (find_package)"
+    description: "The MPI test mpiver for Fortran in mode F08_MODULE"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-RjZMF7"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-RjZMF7"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: " -fallow-argument-mismatch"
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_Fortran_mpiver_F08_MODULE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-RjZMF7'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_06013/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_06013.dir/build.make CMakeFiles/cmTC_06013.dir/build
+        Building Fortran object CMakeFiles/cmTC_06013.dir/mpiver.f90.o
+        /opt/homebrew/bin/mpif90   -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-RjZMF7/mpiver.f90" -o CMakeFiles/cmTC_06013.dir/mpiver.f90.o
+        Linking Fortran executable cmTC_06013
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06013.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_06013.dir/mpiver.f90.o -o cmTC_06013 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1707 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:388 (find_package)"
+    description: "The MPI test mpiver for Fortran in mode F08_MODULE"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-SzqRY8"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-SzqRY8"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: " -fallow-argument-mismatch"
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_Fortran_mpiver_F08_MODULE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-SzqRY8'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cdeec/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cdeec.dir/build.make CMakeFiles/cmTC_cdeec.dir/build
+        Building Fortran object CMakeFiles/cmTC_cdeec.dir/mpiver.f90.o
+        /opt/homebrew/bin/mpif90   -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-SzqRY8/mpiver.f90" -o CMakeFiles/cmTC_cdeec.dir/mpiver.f90.o
+        Linking Fortran executable cmTC_cdeec
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdeec.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_cdeec.dir/mpiver.f90.o -o cmTC_cdeec 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1707 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:388 (find_package)"
+    description: "The MPI test mpiver for Fortran in mode F08_MODULE"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-ZUd9VZ"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-ZUd9VZ"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: " -fallow-argument-mismatch"
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_Fortran_mpiver_F08_MODULE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-ZUd9VZ'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2bed0/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2bed0.dir/build.make CMakeFiles/cmTC_2bed0.dir/build
+        Building Fortran object CMakeFiles/cmTC_2bed0.dir/mpiver.f90.o
+        /opt/homebrew/bin/mpif90   -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-ZUd9VZ/mpiver.f90" -o CMakeFiles/cmTC_2bed0.dir/mpiver.f90.o
+        Linking Fortran executable cmTC_2bed0
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bed0.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_2bed0.dir/mpiver.f90.o -o cmTC_2bed0 
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.2/share/cmake/Modules/FindMPI.cmake:1707 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:388 (find_package)"
+    description: "The MPI test mpiver for Fortran in mode F08_MODULE"
+    directories:
+      source: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-dJuP97"
+      binary: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-dJuP97"
+    cmakeVariables:
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_Fortran_FLAGS: " -fallow-argument-mismatch"
+      CMAKE_Fortran_FLAGS_DEBUG: "-g"
+      CMAKE_MODULE_PATH: "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_Fortran_mpiver_F08_MODULE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-dJuP97'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ab295/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ab295.dir/build.make CMakeFiles/cmTC_ab295.dir/build
+        Building Fortran object CMakeFiles/cmTC_ab295.dir/mpiver.f90.o
+        /opt/homebrew/bin/mpif90   -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -c "/Users/marcolee/Library/CloudStorage/OneDrive-HarrowInternationalSchoolHongKong/python/personal/projects/in progress/Atomic model simulation/qe-7.3/build/CMakeFiles/CMakeScratch/TryCompile-dJuP97/mpiver.f90" -o CMakeFiles/cmTC_ab295.dir/mpiver.f90.o
+        Linking Fortran executable cmTC_ab295
+        /opt/homebrew/Cellar/cmake/3.28.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab295.dir/link.txt --verbose=1
+        /opt/homebrew/bin/mpif90  -fallow-argument-mismatch  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 CMakeFiles/cmTC_ab295.dir/mpiver.f90.o -o cmTC_ab295 
+        
+      exitCode: 0
+...
