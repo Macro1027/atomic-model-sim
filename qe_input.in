@@ -1,0 +1,9 @@
+&CONTROL
+calculation='scf'
+/
+&SYSTEM
+...
+/
+&electrons
+...
+/
